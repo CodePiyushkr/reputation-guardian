@@ -1,16 +1,10 @@
 import { Star, Phone, ShieldCheck, Globe, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero pt-8 pb-20">
+    <section className="relative min-h-[calc(100vh-4rem)] bg-gradient-hero pt-12 pb-20">
       <div className="container">
-        {/* Logo */}
-        <div className="flex justify-center mb-8 animate-fade-in">
-          <img src={logo} alt="Rudraksh Services" className="h-20 md:h-28" />
-        </div>
-
         {/* Main Content */}
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
