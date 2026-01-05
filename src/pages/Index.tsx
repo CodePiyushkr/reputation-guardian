@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PainPoints from "@/components/PainPoints";
 import SolutionIntro from "@/components/SolutionIntro";
@@ -14,6 +15,7 @@ import StickyWhatsApp from "@/components/StickyWhatsApp";
 const Index = () => {
   return (
     <main className="overflow-x-hidden">
+      <Header />
       <Hero />
       <PainPoints />
       <SolutionIntro />
