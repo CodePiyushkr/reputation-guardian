@@ -4,8 +4,8 @@ const reasons = [
   { icon: Trophy, text: "Serving Businesses Since 2014" },
   { icon: Globe, text: "Clients from India, USA, UK & Canada" },
   { icon: Shield, text: "Ethical & Secure Reputation Practices" },
-  { icon: Briefcase, text: "Local Business Growth Specialists" },
-  { icon: TrendingUp, text: "Results-Driven Reputation Strategy" },
+  { icon: Briefcase, text: "Specialists in Local Business Growth" },
+  { icon: TrendingUp, text: "Result-Driven Reputation Strategies" },
   { icon: HeartHandshake, text: "Dedicated Support Team" },
 ];
 

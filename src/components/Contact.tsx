@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
 
           <p className="text-center text-lg font-semibold mt-8 text-muted-foreground">
-            Your Reputation Is Your Biggest Asset – <span className="text-primary">Invest Once, Benefit Forever</span>
+            Your Reputation Is Your Biggest Asset — <span className="text-primary">Invest Once, Benefit Forever</span>
           </p>
         </div>
       </div>
