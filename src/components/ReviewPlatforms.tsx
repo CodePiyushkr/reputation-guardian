@@ -1,4 +1,10 @@
 import { Globe, Star } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const platforms = [
   "Google", "Facebook", "JustDial", "Zomato", "Swiggy",
@@ -24,20 +30,31 @@ const ReviewPlatforms = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Scrollable on mobile */}
-          <div className="overflow-x-auto pb-2">
-            <div className="flex flex-wrap justify-center gap-3 min-w-max px-4 md:px-0">
+          {/* Platforms Carousel */}
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: false,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
               {platforms.map((platform) => (
-                <div
-                  key={platform}
-                  className="bg-primary-foreground/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-foreground/20 flex items-center gap-2 hover:bg-primary-foreground/20 transition-colors"
-                >
-                  <Star className="w-4 h-4 fill-secondary text-secondary" />
-                  <span className="font-medium">{platform}</span>
-                </div>
+                <CarouselItem key={platform} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                  <div className="bg-primary-foreground/10 backdrop-blur-sm px-4 py-3 rounded-full border border-primary-foreground/20 flex items-center justify-center gap-2 hover:bg-primary-foreground/20 transition-colors">
+                    <Star className="w-4 h-4 fill-secondary text-secondary" />
+                    <span className="font-medium">{platform}</span>
+                  </div>
+                </CarouselItem>
               ))}
-            </div>
-          </div>
+            </CarouselContent>
+          </Carousel>
 
           <p className="text-center mt-8 text-xl font-semibold">
             ⭐ And 150+ industry-specific platforms
