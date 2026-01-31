@@ -2,10 +2,12 @@ import { XCircle, ArrowRight } from "lucide-react";
 
 const painPoints = [
   "Negative or fake reviews hurting your sales",
-  "No proper online presence on Google & local platforms",
+  "No strong presence on Google & local platforms",
   "Incomplete or incorrect business information",
-  "Competitors ranking above you locally",
-  "Customers checking reviews but not contacting you",
+  "Competitors ranking higher than you locally",
+  "Customers check reviews but don't contact you",
+  "No optimized Google Business Profile",
+  "Business not listed everywhere customers search",
 ];
 
 const PainPoints = () => {
@@ -13,6 +15,7 @@ const PainPoints = () => {
     <section className="py-20 bg-muted">
       <div className="container">
         <div className="text-center mb-12">
+          <span className="text-4xl mb-4 block">😟</span>
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
             Is Your Business{" "}
             <span className="text-primary">Losing Customers</span> Because of
@@ -36,7 +39,7 @@ const PainPoints = () => {
           <div className="mt-10 p-6 bg-primary text-primary-foreground rounded-xl text-center">
             <p className="text-lg md:text-xl font-semibold flex items-center justify-center gap-2 flex-wrap">
               <ArrowRight className="w-6 h-6" />
-              Your online reputation decides whether customers trust you or skip you.
+              Your online reputation decides whether customers trust you — or skip you.
             </p>
           </div>
         </div>

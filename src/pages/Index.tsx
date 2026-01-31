@@ -7,7 +7,6 @@ import BonusSetups from "@/components/BonusSetups";
 import ReviewPlatforms from "@/components/ReviewPlatforms";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Pricing from "@/components/Pricing";
-import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import StickyWhatsApp from "@/components/StickyWhatsApp";
@@ -24,7 +23,6 @@ const Index = () => {
       <ReviewPlatforms />
       <WhyChooseUs />
       <Pricing />
-      <Timeline />
       <Contact />
       <Footer />
       <StickyWhatsApp />

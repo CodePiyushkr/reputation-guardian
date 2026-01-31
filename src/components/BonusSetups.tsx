@@ -1,12 +1,12 @@
 import { Gift, Check } from "lucide-react";
 
 const bonusItems = [
-  "Business WhatsApp Profile Setup",
-  "WhatsApp Catalog Management",
-  "Truecaller Business Profile Setup",
-  "Facebook Page Verification",
-  "Personal LinkedIn Profile + Business Page (Optional)",
-  "Branding Creatives (Logo, Digital Visiting Card, Covers)",
+  "Google Business products & services listing",
+  "WhatsApp Business profile & catalog management",
+  "Truecaller Business profile setup",
+  "Facebook Page verification (optional)",
+  "Personal LinkedIn + Business Page (optional)",
+  "Branding creatives (Logo, Digital Visiting Card, Covers, QR Codes for Social Media, Payments & Reviews)",
 ];
 
 const BonusSetups = () => {
@@ -27,8 +27,8 @@ const BonusSetups = () => {
           <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 p-8 rounded-2xl border-2 border-secondary/30">
             <div className="grid sm:grid-cols-2 gap-4">
               {bonusItems.map((item, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-brand-green rounded-full flex items-center justify-center flex-shrink-0">
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-brand-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-4 h-4 text-primary-foreground" />
                   </div>
                   <span className="font-medium">{item}</span>
@@ -37,7 +37,7 @@ const BonusSetups = () => {
             </div>
 
             <p className="text-center text-muted-foreground mt-8 text-sm border-t border-border pt-6">
-              💡 Worth much more if done individually – included <strong>FREE</strong> with this plan.
+              💡 Worth much more if done individually — included <strong>FREE</strong>.
             </p>
           </div>
         </div>

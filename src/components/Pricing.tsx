@@ -1,4 +1,4 @@
-import { Check, Zap, ShoppingCart, MessageCircle } from "lucide-react";
+import { Check, Sparkles, MessageCircle, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Pricing = () => {
@@ -7,7 +7,7 @@ const Pricing = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            💰 Simple, <span className="text-primary">Transparent</span> Pricing
+            💰 Simple & <span className="text-primary">Transparent</span> Pricing
           </h2>
         </div>
 
@@ -16,14 +16,13 @@ const Pricing = () => {
             {/* Header */}
             <div className="bg-primary text-primary-foreground p-6 text-center">
               <div className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-bold mb-4">
-                <Zap className="w-4 h-4" />
-                SPECIAL OFFER
+                <Sparkles className="w-4 h-4" />
+                FREE CONSULTATION
               </div>
-              <div className="flex items-center justify-center gap-3 mb-2">
-                <span className="text-2xl line-through opacity-60">₹12,000</span>
-                <span className="text-5xl font-extrabold">₹9,000</span>
-              </div>
-              <p className="text-primary-foreground/80">One-Time Payment Only</p>
+              <h3 className="text-2xl font-bold mb-2">Book a FREE Consultation</h3>
+              <p className="text-primary-foreground/80">
+                Get a Personalized POA (Plan of Action) for your business
+              </p>
             </div>
 
             {/* Features */}
@@ -53,19 +52,10 @@ const Pricing = () => {
 
               {/* CTA Buttons */}
               <div className="space-y-3">
-                <Button size="lg" className="w-full text-lg py-6 shadow-primary">
-                  <ShoppingCart className="w-5 h-5 mr-2" />
-                  Place Order Online
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="w-full text-lg py-6 border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-primary-foreground"
-                  asChild
-                >
+                <Button size="lg" className="w-full text-lg py-6 shadow-primary" asChild>
                   <a href="https://wa.me/919560910661" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    WhatsApp Us Now
+                    Book FREE Consultation Now
                   </a>
                 </Button>
               </div>

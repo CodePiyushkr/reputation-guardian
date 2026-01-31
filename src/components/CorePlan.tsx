@@ -3,27 +3,35 @@ import { CheckCircle2, Lock } from "lucide-react";
 const planFeatures = [
   {
     title: "Business Profiling",
-    description: "In-depth analysis of your business model and online presence to identify gaps and growth opportunities.",
+    description: "Detailed analysis of your business model and online presence to identify gaps and growth opportunities.",
   },
   {
     title: "Business Listing",
-    description: "Your business listed on high-impact and relevant platforms to improve local visibility & authority.",
+    description: "Listing your business on high-impact and relevant platforms to boost Local visibility & Authority.",
   },
   {
     title: "Business Information Optimization",
-    description: "Accurate, optimized business details for better trust, SEO & customer experience.",
+    description: "Accurate, SEO-friendly details for Better Trust, discoverability & user experience.",
   },
   {
     title: "Social Media Profiling",
     description: "Professional setup of social media accounts with consistent branding.",
   },
   {
-    title: "Branding",
-    description: "Unified brand identity across all platforms to build credibility & recognition.",
+    title: "Branding Foundation",
+    description: "Unified and trustworthy brand identity across all platforms.",
   },
   {
-    title: "Local Marketing Setup",
-    description: "Google Business Profile optimization + listing on trusted local directories.",
+    title: "Local Marketing Plan (FREE)",
+    description: "Customized marketing plan with FREE premium consultation.",
+  },
+  {
+    title: "Optimized Google Business Profile",
+    description: "Professional setup and optimization of your Google Business Page.",
+  },
+  {
+    title: "Business WhatsApp Setup",
+    description: "Complete professional WhatsApp Business profiling.",
   },
 ];
 
@@ -37,11 +45,11 @@ const CorePlan = () => {
             <span className="font-semibold">Reputation Building & Repair Plan</span>
           </div>
           <h2 className="text-2xl md:text-4xl font-bold">
-            One-Time Investment for <span className="text-primary">Lifetime Results</span>
+            <span className="text-primary">(One-Time Investment)</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {planFeatures.map((feature, index) => (
             <div
               key={index}
