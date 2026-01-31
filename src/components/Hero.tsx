@@ -1,5 +1,11 @@
 import { Star, Phone, Stethoscope, Globe, Award, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const trustBadges = [
   { icon: Stethoscope, text: "Reputation Doctor for Businesses" },
@@ -26,19 +32,32 @@ const Hero = () => {
             Trusted by Indian Businesses <span className="font-bold text-foreground">Since 2014</span>
           </p>
 
-          {/* Trust Badges - Horizontal Scroll on Mobile */}
-          <div className="mb-10 animate-fade-in-up overflow-x-auto pb-2">
-            <div className="flex gap-4 justify-start md:justify-center min-w-max px-4 md:px-0">
-              {trustBadges.map((badge, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-full border shadow-sm whitespace-nowrap"
-                >
-                  <badge.icon className="w-5 h-5 text-secondary flex-shrink-0" />
-                  <span className="text-sm font-medium">{badge.text}</span>
-                </div>
-              ))}
-            </div>
+          {/* Trust Badges Carousel */}
+          <div className="mb-10 animate-fade-in-up">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 2500,
+                  stopOnInteraction: false,
+                }),
+              ]}
+              className="w-full max-w-4xl mx-auto"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {trustBadges.map((badge, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <div className="flex items-center justify-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-3 rounded-full border shadow-sm h-full">
+                      <badge.icon className="w-5 h-5 text-secondary flex-shrink-0" />
+                      <span className="text-sm font-medium">{badge.text}</span>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
 
           {/* CTA Buttons */}
