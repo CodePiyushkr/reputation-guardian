@@ -36,10 +36,14 @@ const PainPoints = () => {
             ))}
           </div>
 
-          <div className="mt-8 md:mt-10 p-4 md:p-6 bg-primary text-primary-foreground rounded-xl text-center">
-            <p className="text-sm md:text-xl font-semibold flex items-center justify-center gap-2 flex-wrap">
-              <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
-              Your online reputation decides whether customers trust you — or skip you.
+          <p className="text-center text-base md:text-xl font-bold mt-8 md:mt-10 mb-4 md:mb-5 px-2">
+            Your online reputation decides whether
+          </p>
+
+          <div className="p-5 md:p-8 bg-primary text-primary-foreground rounded-2xl text-center shadow-lg">
+            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 mx-auto mb-2" />
+            <p className="text-lg md:text-2xl font-bold leading-snug">
+              Customers trust you — or Skip you.
             </p>
           </div>
         </div>
