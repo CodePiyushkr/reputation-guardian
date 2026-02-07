@@ -52,10 +52,10 @@ const Pricing = () => {
 
               {/* CTA Buttons */}
               <div className="space-y-3">
-                <Button size="lg" className="w-full text-base md:text-lg py-5 md:py-6 shadow-primary" asChild>
+                <Button size="lg" className="w-full text-base md:text-lg py-5 md:py-6 bg-brand-green hover:bg-brand-green/90 shadow-lg" asChild>
                   <a href="https://wa.me/919560910661" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    Book FREE Consultation Now
+                    Get FREE Consultation Now
                   </a>
                 </Button>
               </div>

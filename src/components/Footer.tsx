@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="py-10 bg-foreground text-background">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <img src={logo} alt="Rudraksh Services" className="h-12 bg-background rounded-lg p-1" />
+          <div className="flex items-center gap-4 group">
+            <img src={logo} alt="Rudraksh Services" className="h-20 md:h-24" />
             <div>
-              <p className="font-bold">Rudraksh Services, Ajmer</p>
+              <p className="font-bold text-base md:text-lg text-background group-hover:text-primary transition-colors duration-200">Rudraksh Services</p>
               <p className="text-sm text-background/70">Digital Business Solution</p>
             </div>
           </div>
