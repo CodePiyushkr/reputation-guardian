@@ -75,16 +75,26 @@ const Contact = () => {
             </Button>
           </div>
 
-          <p className="text-center text-xs md:text-sm text-muted-foreground mt-6 md:mt-8 px-2">
-            For customizable digital marketing services for your business{" "}
-            <a href="https://rudrakshservices.com" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">
-              visit our website
-            </a>
-          </p>
+          <div className="text-center mt-8 md:mt-10 space-y-3 md:space-y-4 px-2">
+            <p className="text-sm md:text-base text-muted-foreground">
+              For customizable digital marketing services for your business
+            </p>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-sm md:text-base px-6 md:px-8 py-3 md:py-4 transition-all"
+              asChild
+            >
+              <a href="https://rudrakshservices.com" target="_blank" rel="noopener noreferrer">
+                <Globe className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                Visit Our Website
+              </a>
+            </Button>
 
-          <p className="text-center text-sm md:text-lg font-semibold mt-3 md:mt-4 text-muted-foreground px-2">
-            Your Reputation Is Your Biggest Asset — <span className="text-primary">Invest Once, Benefit Forever</span>
-          </p>
+            <p className="text-sm md:text-lg font-semibold text-muted-foreground pt-2">
+              Your Reputation Is Your Biggest Asset — <span className="text-primary">Invest Once, Benefit Forever</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
