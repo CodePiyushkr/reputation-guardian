@@ -18,16 +18,14 @@ const Contact = () => {
           <div className="bg-card p-4 md:p-8 rounded-2xl border shadow-md">
             <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
               <a 
-                href="https://wa.me/919560910661" 
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+919560910661"
                 className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-brand-green/10 rounded-xl hover:bg-brand-green/20 transition-colors"
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-brand-green rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 md:w-6 md:h-6 text-primary-foreground" />
                 </div>
                 <div className="text-left min-w-0">
-                  <p className="text-xs md:text-sm text-muted-foreground">WhatsApp</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Call Now</p>
                   <p className="text-base md:text-xl font-bold truncate">+91 95609 10661</p>
                 </div>
               </a>
@@ -65,7 +63,7 @@ const Contact = () => {
 
             <Button 
               size="lg" 
-              className="w-full text-base md:text-lg py-5 md:py-6 shadow-primary"
+              className="w-full text-base md:text-lg py-5 md:py-6 bg-brand-green hover:bg-brand-green/90 text-primary-foreground shadow-lg"
               asChild
             >
               <a href="https://wa.me/919560910661" target="_blank" rel="noopener noreferrer">
