@@ -7,7 +7,8 @@ const SolutionIntro = () => {
         <div className="text-center max-w-4xl mx-auto">
           <span className="text-3xl md:text-4xl mb-3 md:mb-4 block">🛠️</span>
           <h2 className="text-xl md:text-4xl font-bold mb-4 md:mb-6">
-            Complete Reputation Building & Repair —{" "}
+            Complete Reputation Building & Repair —
+            <br />
             <span className="text-primary">One-Time, Lifetime Impact</span>
           </h2>
 

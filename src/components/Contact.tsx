@@ -33,7 +33,9 @@ const Contact = () => {
               </a>
 
               <a 
-                href="mailto:support@rudrakshservices.com" 
+                href="https://mail.google.com/mail/?view=cm&to=support@rudrakshservices.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-primary/10 rounded-xl hover:bg-primary/20 transition-colors"
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
@@ -73,7 +75,14 @@ const Contact = () => {
             </Button>
           </div>
 
-          <p className="text-center text-sm md:text-lg font-semibold mt-6 md:mt-8 text-muted-foreground px-2">
+          <p className="text-center text-xs md:text-sm text-muted-foreground mt-6 md:mt-8 px-2">
+            For customizable digital marketing services for your business{" "}
+            <a href="https://rudrakshservices.com" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">
+              visit our website
+            </a>
+          </p>
+
+          <p className="text-center text-sm md:text-lg font-semibold mt-3 md:mt-4 text-muted-foreground px-2">
             Your Reputation Is Your Biggest Asset — <span className="text-primary">Invest Once, Benefit Forever</span>
           </p>
         </div>

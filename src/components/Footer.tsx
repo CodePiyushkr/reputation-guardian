@@ -14,6 +14,14 @@ const Footer = () => {
           </div>
 
           <div className="text-center md:text-right">
+            <a 
+              href="https://rudrakshservices.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block text-sm font-medium text-background hover:underline mb-2"
+            >
+              🌐 Visit Our Website
+            </a>
             <p className="text-sm text-background/70">
               © {new Date().getFullYear()} Rudraksh Services. All rights reserved.
             </p>
