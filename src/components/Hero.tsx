@@ -47,10 +47,10 @@ const Hero = () => {
               ]}
               className="w-full max-w-4xl mx-auto"
             >
-              <CarouselContent className="-ml-2">
+              <CarouselContent className="-ml-3 md:-ml-4">
                 {trustBadges.map((badge, index) => (
-                  <CarouselItem key={index} className="pl-2 basis-[85%] sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                    <div className="flex items-center justify-center gap-2 bg-card/80 backdrop-blur-sm px-3 md:px-4 py-2 md:py-3 rounded-full border shadow-sm h-full">
+                  <CarouselItem key={index} className="pl-3 md:pl-4 basis-[80%] sm:basis-1/2 lg:basis-1/3">
+                    <div className="flex items-center justify-center gap-2 bg-card/80 backdrop-blur-sm px-4 md:px-5 py-2 md:py-3 rounded-full border shadow-sm h-full">
                       <badge.icon className="w-4 h-4 md:w-5 md:h-5 text-secondary flex-shrink-0" />
                       <span className="text-xs md:text-sm font-medium whitespace-nowrap">{badge.text}</span>
                     </div>
